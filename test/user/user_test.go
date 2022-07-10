@@ -18,12 +18,3 @@ func TestCreateUser(t *testing.T) {
 		return
 	}
 }
-
-//please run add function "NewUser" first before "LoginUser"
-func TestLoginUser(t *testing.T) {
-	loginuser := user.LoginUser("Hesrti", "123")
-	if loginuser == nil {
-		t.Errorf("Wrong ID or Password !")
-		return
-	}
-}
